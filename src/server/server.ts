@@ -14,10 +14,6 @@ if (isProduction) {
 	app.use(express.static('public'));
 }
 
-// all our api routes
-app.get('/api/hello', (req, res) => {
-	res.json({ message: 'World' });
-});
 
 // 404 fallback for client side routing
 if (isProduction) {
