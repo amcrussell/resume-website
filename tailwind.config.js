@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx,csx}', './public/*.html'],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx,csx}", "./public/*.html"],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [require("tailwind-scrollbar-hide")],
+};
